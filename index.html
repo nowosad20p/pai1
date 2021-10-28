@@ -8,13 +8,14 @@
 </head>
 <body>
     <input type="text" id="imie"><input id="przycisk" type="button">
-    <p></p>
+    <p id="wypisz"></p>
     <script>
-        document.querySelector("przycisk").addEventListener("click","klik");
+        document.querySelector("#przycisk").addEventListener("click","klik");
         imie=document.querySelector("#imie");
+        wypisz=document.querySelector("#wypisz");
 
         function klik(){
-         
+         wypisz.innerHTML="Cześć, "+imie.textContext;
         }
 
     </script>
