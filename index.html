@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="text" id="imie"><input id="przycisk" type="button">
-    <p id="wypisz"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Strona</title>
+  </head>
+  <body>
+    <header><h1>Strona</h1></header>
+    <main>
+      <input type="text" id="imie" /><input id="przycisk" type="button" />
+      <p id="wypisz"></p>
+    </main>
     <script>
-        document.querySelector("#przycisk").addEventListener("click","klik");
-        imie=document.querySelector("#imie");
-        wypisz=document.querySelector("#wypisz");
+      document.querySelector("#przycisk").addEventListener("click", klik);
+      imie = document.querySelector("#imie");
+      wypisz = document.querySelector("#wypisz");
 
-        function klik(){
-         wypisz.innerHTML="Cześć, "+imie.textContext;
-        }
-
+      function klik() {
+        wypisz.innerHTML = "Cześć, " + imie.value;
+      }
     </script>
-</body>
+  </body>
 </html>
