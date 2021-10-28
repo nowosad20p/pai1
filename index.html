@@ -21,8 +21,8 @@
     </main>
     <script>
       document.querySelector("#przycisk").addEventListener("click", klik);
-      imie = document.querySelector("#imie");
-      wypisz = document.querySelector("#wypisz");
+      const imie = document.querySelector("#imie");
+      const wypisz = document.querySelector("#wypisz");
 
       function klik() {
         wypisz.innerHTML = "Cześć, " + imie.value;
